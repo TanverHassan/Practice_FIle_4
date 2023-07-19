@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Drop{
+    background-color: #3498db;
+}
+.Drop ul{
+    text-align: center;
+}
+.Drop ul li{
+    display: inline-block;
+    margin: -4px;
+    margin-bottom: 0;
+    
+}
+.Drop ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.Drop ul li a{
+    display: inline-block;
+    color: #ddd;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 35px;
+    border-right: 1px solid #ddd;
+}
+.Drop ul li:hover > a{
+    background-color: #2980b9;
+}
+/* Dropdwn Menu */
+.Drop ul li{
+    position: relative;
+}
+.Drop ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 150px;
+    border-top: 1px solid #ddd;
+    background-color: #3498db;
+    transition: .4s;
+}
+.Drop ul li ul li{
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+.Drop ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.Drop ul ul li:first-child a{
+    border-left: none;
+}
+
+/* Hover Part */
+.Drop ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.Drop ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
